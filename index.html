@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imagenes{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;           
+            border: solid 1px black;  
+            padding: 1em;
+        }
+
+        .imagenes h4{
+            margin-left: 15em;
+        }
+
+        .galeria{            
+            display: flex;
+            flex-direction: row;
+             gap: 2em;
+            padding-top: 1em; 
+        }
+
+        .galeria img{
+            width: 200px;
+            height: 200px;
+            overflow: hidden;            
+            border: solid gray 1px;           
+        }
+
+        .card{
+             display: flex;
+             flex-direction: column;
+             gap: 1em;
+        }
+
+        .boton {
+        background-color: #ccc; 
+        color: #000;
+        border-radius: 5px;
+        margin-left: 20em;
+        margin-top: 3em;
+        cursor: pointer;
+        width: 120px;
+        height: 30px;
+        }
+
+        #validacion{
+        margin-top: 2em;
+        margin-left: 16em;    
+        }
+
+        .pass{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            margin-left: 16em;
+            margin-top: 3em;
+            align-items: center;
+            border: solid 1px black;
+            padding: 1em;
+        }
+        .selec{
+            margin-bottom: 1em;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <section>
+        <img id="imgdog" style="width: 15%;" src="https://random.dog/6b3100c1-34a0-4795-8de6-82da13eec2af.jpg" alt="dog">
+    </section>       
+
+    <section class="imagenes">
+        <h4>Puedes selecionar 10 Stiker</h4>
+        <div class="galeria">
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/c4/e3/4a/c4e34a5093096496b3d889aa2b81dbc5.jpg" alt="genos">
+            <input type="number" name="" id="st1">
+
+        </div>
+        <div class="card">
+            <img src="https://calibearprints.com/cdn/shop/products/SAITAMA-OK.jpg?v=1664569186&width=1445" alt="saitama">
+            <input type="number" name="" id="st2">
+        </div>
+        <div class="card">
+            <img src="https://juststickers.in/wp-content/uploads/2018/04/one-punch-man.png" alt="charanko">
+            <input type="number" name="" id="st3">
+        </div>
+        </div>
+
+        <span id="validacion">  </span>
+        <button id="boton" class="boton"> Verificar</button>
+    </section>
+
+    <section class="pass">
+        <h4>Ingresa el Passwork</h4>
+        <div class="selec">
+        <select name="ps1" id="ps1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+
+        </select>
+
+        <select name="ps2" id="ps2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+
+        </select>
+
+        <select name="ps3" id="ps3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+
+        </select>
+        </div>
+        <span id="clave">  </span>
+        <button id="btnps">validar</button>
+        
+    </section>
+
+    <script src="js.js"></script>
+</body>
+</html>
